@@ -21,16 +21,16 @@ function displayBlogs(){
     const end = start + blogsPerPage;
     const currentBlogs = blogs.slice(start, end);
 
-    blogContainer.className="container flex flex-row items-center justify-center space-x-2 px-10 w-3/4 mt-8";
+    blogContainer.className="container flex flex-row items-center justify-center space-x-4 px-10 w-3/4 mt-8";
 
     const leftBlog = document.createElement('a');
-    leftBlog.className = "w-2/3 h-[400px] overflow-hidden shadow-lg hover:scale-103 transition-transform duration-300 ";
+    leftBlog.className = "w-2/3 h-[400px] overflow-hidden shadow-lg hover:scale-103 transition-transform duration-300 hover:rounded-lg cursor-pointer";
     const rightColumn = document.createElement('a');
-    rightColumn.className = "w-1/3 flex flex-col h-[400px] gap-2";
+    rightColumn.className = "w-1/3 flex flex-col h-[400px] space-y-2";
     
     currentBlogs.forEach((blog, index)=>{
         const blogDiv = document.createElement('div');
-        blogDiv.className = "relative overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300";
+        blogDiv.className = "relative overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 hover:rounded-lg cursor-pointer";
         blogDiv.innerHTML = `
         <img src="${blog.image}" class="w-full h-full object-cover" alt="${blog.title}">
         <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-xl font-semibold opacity-0 hover:opacity-100 transition-opacity">
