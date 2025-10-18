@@ -7,7 +7,7 @@
     <title>Favy - Blogspot</title>
 </head>
 <body class="">
-    <nav class="bg-white/60 backdrop-blur-2xl rounded-b-lg dark:bg-gray-900 fixed w-full shadow-lg">
+    <nav class="bg-white/60 backdrop-blur-2xl z-10 rounded-b-2xl dark:bg-gray-900 fixed w-full shadow-lg border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="home.html" class="flex items-center space-x-3 rtl:space-x-reverse">
             <span class="self-center text-4xl font-bold whitespace-nowrap dark:text-white">Favy</span>
@@ -19,7 +19,7 @@
             </svg>
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-medium text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <ul class="font-medium text-lg flex flex-col md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
             <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
             </li>
@@ -34,8 +34,51 @@
     </div>
     </nav>
     <div class="h-16"></div>
-    <section class="py-8 h-200 w-full flex flex-col bg-gradient-to-br from-white to-blue-100  text-center items-center">
-        <h1 class="text-5xl">Website <br>    Blog and Ebook</h1>
+    <section class="p-12 min-h-screen w-full flex flex-col bg-gradient-to-br from-white to-[#E4FDE1]  text-center items-center">
+        <h1 class="text-5xl font-bold">Website <br>Blog and Ebook</h1>
+       
+        
     </section>
+    <section class="py-25 flex flex-col items-center">
+        <h1 class="text-9xl font-extrabold tracking-wide bg-gradient-to-r from-[#62A57A] to-[#80E0A1] bg-clip-text text-transparent">BLOG TERBARU</h1>
+         <div id="blog-container" class="container mx-4  flex flex-row items-center justify-center space-x-4 mt-8">
+
+        </div>
+        <div id="navigation" class="mt-6 flex flex-row justify-between space-x-4  shadow-2xl px-8 py-4 rounded-2xl shadow-gray-400 border border-gray-300">
+            <div class="">
+                <button id="prev" class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded disabled:opacity-50">Previous</button>
+                <button id="next" class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded disabled:opacity-50">Next</button>
+            </div>
+            <a href="" id="load-more" class="px-4 py-2 items-end font-semibold bg-[#C1FF1C]  transition-all duration-300 rounded">Load More -></a>
+        </div>
+    </section>
+
+    <section id="daftar" class="px-10 py-30">
+        <div class="container flex flex-row px-20 gap-20 items-center justify-center">
+            <div class="flex flex-col w-2/4">
+                <h1 class="text-5xl mb-8 font-bold">Mulai Tulis Blog Kamu!!!</h1>
+                <p class="text-lg">Mari bergabung menjadi bagian dari komunitas literasi digital kami!
+Kami membuka kesempatan bagi kamu yang memiliki minat dalam menulis, berbagi wawasan, dan menyebarkan inspirasi seputar dunia kesehatan dan gaya hidup sehat.
+Tulisanmu akan membantu banyak orang untuk hidup lebih baik, lebih sadar akan pentingnya menjaga keseimbangan tubuh dan pikiran.
+Daftarkan dirimu sekarang dan jadilah penulis di platform blog Favy — tempat di mana setiap kata memiliki dampak positif untuk masa depan yang lebih sehat.</p>
+                <a href="register.html" class="font-bold text-lg mt-6 px-6 py-3 bg-gradient-to-r from-[#62A57A] to-[#80E0A1] hover:bg-gradient-to-r hover:from-[#80E0A1] hover:to-[#62A57A] hover:-translate-y-1 transition-colors duration-300 text-white rounded text-center hover:rounded-4xl hover:shadow-2xl">Daftar Sekarang</a>
+            </div>
+            <img src="../assets/images/image.jpeg" alt="" class="w-1/3 h-[350px] rounded-lg object-cover object-top hover:scale-105 transition-all duration-500 hover:shadow-lg hover:opacity-100 shadow-gray-400">
+        </div> 
+    </section>
+    <section id="ebook" class="px-10 py-20">
+        <h1 class="text-5xl mb-8 font-bold px-35">Ebook Terbaru</h1>
+        <div class="container px-30 flex flex-row items-center justify-start space-x-10">
+            <div id="card" class="shadow-lg rounded-lg overflow-hidden flex flex-row max-w-1/3  h-1/3">
+                <img id="ebook-image" class="w-full h-64 object-cover object-top " src="/assets/images/image.jpeg" alt="Ebook Image">
+                <div class="p-6">
+                    <h2 id="ebook-title" class="text-2xl font-bold mb-2">Judul Ebook</h2>
+                    <p id="ebook-description" class="text-gray-700 mb-4 text-clip">Deskripsi singkat tentang ebook ini yang memberikan gambaran kepada pembaca mengenai isi dan manfaat dari ebook tersebut.</p>
+                    <a id="ebook-link" href="#" class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca Sekarang</a>
+                </div>
+        </div>
+
+    </section>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
