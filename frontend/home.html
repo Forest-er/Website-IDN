@@ -1,55 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/output.css"> 
+    <link rel="stylesheet" href="../assets/css/output.css">
     <title>Favy - Blogspot</title>
 </head>
+
 <body class="">
-    <nav class="bg-white/60 backdrop-blur-2xl z-10 rounded-b-2xl dark:bg-gray-900 fixed w-full shadow-lg border-b border-gray-200">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="home.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <span class="self-center text-4xl font-bold whitespace-nowrap dark:text-white">Favy</span>
-        </a>
-        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-            </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-medium text-lg flex flex-col md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-            </li>
-            <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
-            </li>
-            <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ebook</a>
-            </li>
-        </ul>
+    <nav
+        class="bg-white/60 backdrop-blur-2xl z-10 rounded-b-2xl dark:bg-gray-900 fixed w-full shadow-lg border-b border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="home.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-4xl font-bold whitespace-nowrap dark:text-white">Favy</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium text-lg flex flex-col md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ebook</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
     </nav>
     <div class="h-16"></div>
-    <section class="p-12 min-h-screen w-full flex flex-col bg-gradient-to-br from-white to-[#E4FDE1]  text-center items-center">
+
+    <section class="p-12 w-full flex flex-col bg-gradient-to-br from-white to-[#E4FDE1] text-center items-center">
         <h1 class="text-5xl font-bold">Website <br>Blog and Ebook</h1>
-       
-        
+        <p class="text-lg mt-10 ">
+            Jelajahi berbagai blog dan e-book seputar kesehatan untuk menambah wawasan dan inspirasi hidup sehatmu.
+            Temukan informasi menarik dan tips bermanfaat hanya di sini!
+        </p>
+
+        <div class="w-full max-w-6xl h-[400px] flex justify-center items-end mt-10 overflow-hidden relative">
+            <div id="stairCarousel" class="flex justify-center items-end transition-all duration-700 w-full h-full">
+            </div>
+        </div>
     </section>
+
     <section class="py-25 flex flex-col items-center">
-        <h1 class="text-9xl font-extrabold tracking-wide bg-gradient-to-r from-[#62A57A] to-[#80E0A1] bg-clip-text text-transparent">BLOG TERBARU</h1>
-         <div id="blog-container" class="container mx-4  flex flex-row items-center justify-center space-x-4 mt-8">
+        <h1
+            class="text-9xl font-extrabold tracking-wide bg-gradient-to-r from-[#62A57A] to-[#80E0A1] bg-clip-text text-transparent">
+            BLOG TERBARU</h1>
+        <div id="blog-container" class="container mx-4  flex flex-row items-center justify-center space-x-4 mt-8">
 
         </div>
-        <div id="navigation" class="mt-6 flex flex-row justify-between space-x-4  shadow-2xl px-8 py-4 rounded-2xl shadow-gray-400 border border-gray-300">
+        <div id="navigation"
+            class="mt-6 flex flex-row justify-between space-x-4  shadow-2xl px-8 py-4 rounded-2xl shadow-gray-400 border border-gray-300">
             <div class="">
-                <button id="prev" class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded disabled:opacity-50">Previous</button>
-                <button id="next" class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded disabled:opacity-50">Next</button>
+                <button id="prev"
+                    class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded disabled:opacity-50">Previous</button>
+                <button id="next"
+                    class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded disabled:opacity-50">Next</button>
             </div>
-            <a href="" id="load-more" class="px-4 py-2 items-end font-semibold bg-[#C1FF1C]  transition-all duration-300 rounded">Load More -></a>
+            <a href="" id="load-more"
+                class="px-4 py-2 items-end font-semibold bg-[#C1FF1C]  transition-all duration-300 rounded">Load More
+                -></a>
         </div>
     </section>
 
@@ -58,64 +86,97 @@
             <div class="flex flex-col w-2/4">
                 <h1 class="text-5xl mb-8 font-bold">Mulai Tulis Blog Kamu!!!</h1>
                 <p class="text-lg">Mari bergabung menjadi bagian dari komunitas literasi digital kami!
-Kami membuka kesempatan bagi kamu yang memiliki minat dalam menulis, berbagi wawasan, dan menyebarkan inspirasi seputar dunia kesehatan dan gaya hidup sehat.
-Tulisanmu akan membantu banyak orang untuk hidup lebih baik, lebih sadar akan pentingnya menjaga keseimbangan tubuh dan pikiran.
-Daftarkan dirimu sekarang dan jadilah penulis di platform blog Favy — tempat di mana setiap kata memiliki dampak positif untuk masa depan yang lebih sehat.</p>
-                <a href="register.html" class="font-bold text-lg mt-6 px-6 py-3 bg-gradient-to-r from-[#62A57A] to-[#80E0A1] hover:bg-gradient-to-r hover:from-[#80E0A1] hover:to-[#62A57A] hover:-translate-y-1 transition-colors duration-300 text-white rounded text-center hover:rounded-4xl hover:shadow-2xl">Daftar Sekarang</a>
+                    Kami membuka kesempatan bagi kamu yang memiliki minat dalam menulis, berbagi wawasan, dan
+                    menyebarkan inspirasi seputar dunia kesehatan dan gaya hidup sehat.
+                    Tulisanmu akan membantu banyak orang untuk hidup lebih baik, lebih sadar akan pentingnya menjaga
+                    keseimbangan tubuh dan pikiran.
+                    Daftarkan dirimu sekarang dan jadilah penulis di platform blog Favy — tempat di mana setiap kata
+                    memiliki dampak positif untuk masa depan yang lebih sehat.</p>
+                <a href="register.html"
+                    class="font-bold text-lg mt-6 px-6 py-3 bg-gradient-to-r from-[#62A57A] to-[#80E0A1] hover:bg-gradient-to-r hover:from-[#80E0A1] hover:to-[#62A57A] hover:-translate-y-1 transition-colors duration-300 text-white rounded text-center hover:rounded-4xl hover:shadow-2xl">Daftar
+                    Sekarang</a>
             </div>
-            <img src="../assets/images/image.jpeg" alt="" class="w-1/3 h-[350px] rounded-lg object-cover object-top hover:scale-105 transition-all duration-500 hover:shadow-lg hover:opacity-100 shadow-gray-400">
-        </div> 
+            <img src="../assets/images/image.jpeg" alt=""
+                class="w-1/3 h-[350px] rounded-lg object-cover object-top hover:scale-105 transition-all duration-500 hover:shadow-lg hover:opacity-100 shadow-gray-400">
+        </div>
     </section>
     <section id="ebook" class="px-35 py-20 flex flex-col items-center">
         <h1 class="text-5xl mb-8 font-bold text-start">Ebook Terbaru</h1>
         <div class="container mb-10 w-full flex flex-row items-center space-x-10 overflow-x-auto py-10">
-            <div id="card" class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
-                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top " src="/assets/images/image.jpeg" alt="Ebook Image">
+            <div id="card"
+                class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
+                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top "
+                    src="/assets/images/image.jpeg" alt="Ebook Image">
                 <div class="p-6">
                     <h2 id="ebook-title" class="text-2xl font-bold mb-2">Judul Ebook</h2>
-                    <a id="ebook-link" href="#" class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca Sekarang</a>
+                    <a id="ebook-link" href="#"
+                        class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca
+                        Sekarang</a>
                 </div>
             </div>
-            <div id="card" class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
-                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top " src="/assets/images/image.jpeg" alt="Ebook Image">
+            <div id="card"
+                class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
+                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top "
+                    src="/assets/images/image.jpeg" alt="Ebook Image">
                 <div class="p-6">
                     <h2 id="ebook-title" class="text-2xl font-bold mb-2">Judul Ebook</h2>
-                    <a id="ebook-link" href="#" class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca Sekarang</a>
+                    <a id="ebook-link" href="#"
+                        class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca
+                        Sekarang</a>
                 </div>
             </div>
-            <div id="card" class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
-                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top " src="/assets/images/image.jpeg" alt="Ebook Image">
+            <div id="card"
+                class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
+                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top "
+                    src="/assets/images/image.jpeg" alt="Ebook Image">
                 <div class="p-6">
                     <h2 id="ebook-title" class="text-2xl font-bold mb-2">Judul Ebook</h2>
-                    <a id="ebook-link" href="#" class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca Sekarang</a>
+                    <a id="ebook-link" href="#"
+                        class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca
+                        Sekarang</a>
                 </div>
             </div>
-            <div id="card" class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
-                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top " src="/assets/images/image.jpeg" alt="Ebook Image">
+            <div id="card"
+                class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
+                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top "
+                    src="/assets/images/image.jpeg" alt="Ebook Image">
                 <div class="p-6">
                     <h2 id="ebook-title" class="text-2xl font-bold mb-2">Judul Ebook</h2>
-                    <a id="ebook-link" href="#" class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca Sekarang</a>
+                    <a id="ebook-link" href="#"
+                        class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca
+                        Sekarang</a>
                 </div>
             </div>
-            <div id="card" class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
-                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top " src="/assets/images/image.jpeg" alt="Ebook Image">
+            <div id="card"
+                class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
+                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top "
+                    src="/assets/images/image.jpeg" alt="Ebook Image">
                 <div class="p-6">
                     <h2 id="ebook-title" class="text-2xl font-bold mb-2">Judul Ebook</h2>
-                    <a id="ebook-link" href="#" class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca Sekarang</a>
+                    <a id="ebook-link" href="#"
+                        class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca
+                        Sekarang</a>
                 </div>
             </div>
-            <div id="card" class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
-                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top " src="/assets/images/image.jpeg" alt="Ebook Image">
+            <div id="card"
+                class="border border-gray-300 shadow-md hover:shadow-green-300  hover:-translate-y-2 transition-all duration-200 rounded-lg p-4 overflow-hidden flex flex-col shrink-0 w-1/4 h-full items-center">
+                <img id="ebook-image" class="w-full h-3/4 rounded-lg object-cover object-top "
+                    src="/assets/images/image.jpeg" alt="Ebook Image">
                 <div class="p-6">
                     <h2 id="ebook-title" class="text-2xl font-bold mb-2">Judul Ebook</h2>
-                    <a id="ebook-link" href="#" class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca Sekarang</a>
+                    <a id="ebook-link" href="#"
+                        class="px-4 py-2 bg-[#62A57A] hover:bg-[#49796B] transition-all duration-300 text-white rounded">Baca
+                        Sekarang</a>
                 </div>
             </div>
-            
+
         </div>
-        <a href="" id="load-more" class="px-4 py-2 items-end font-semibold bg-[#C1FF1C] hover:bg-[#A3D600] transition-all duration-300 rounded">Load More -></a>
+        <a href="" id="load-more"
+            class="px-4 py-2 items-end font-semibold bg-[#C1FF1C] hover:bg-[#A3D600] transition-all duration-300 rounded">Load
+            More -></a>
 
     </section>
     <script src="../assets/js/script.js"></script>
 </body>
+
 </html>
